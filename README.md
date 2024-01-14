@@ -1,10 +1,10 @@
 # sql-challenge
 
-# QuickDBD was used to generate the Entity Relationship Diagram
+QuickDBD was used to generate the Entity Relationship Diagram
 
 
-# Composite keys were added to the exported PostgreSQL file (EmployeeSQL/employees_table_schemata.sql)
----
+Composite keys were added to the exported PostgreSQL file (EmployeeSQL/employees_table_schemata.sql)
+
 CREATE TABLE "Department_Managers" (
     "dept_no" varchar(10)   NOT NULL,
     "emp_no" int   NOT NULL,
@@ -16,6 +16,6 @@ CREATE TABLE "Department_Employees" (
     "dept_no" varchar(10)   NOT NULL,
 	CONSTRAINT "pk_Department_Employees" PRIMARY KEY ("emp_no", "dept_no")
 );
----
 
-# Data Analysis (EmployeeSQL/queries.sql)
+
+Data Analysis (EmployeeSQL/queries.sql)
